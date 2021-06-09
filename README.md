@@ -8,4 +8,6 @@ Please follow [this link for documentation](https://barry-lab.github.io/SpatialA
 
 Please cite this software as follows:
 
-    Tanni, S., & Barry, C. (2019). SpatialAutoDACQ. https://barry-lab.github.io/SpatialAutoDACQ/
+    Tanni, Sander, & Barry, Caswell. (2021, June 9). SpatialAutoDACQ - Automated system for scalable data acquisition in spatial tasks (Version v0.88.2). Zenodo. http://doi.org/10.5281/zenodo.4916106
+
+[![DOI](https://zenodo.org/badge/356579264.svg)](https://zenodo.org/badge/latestdoi/356579264)
