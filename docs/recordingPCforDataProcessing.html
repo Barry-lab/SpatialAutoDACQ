@@ -1,0 +1,292 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Recording PC setup for Data Processing &mdash; openEPhys_DACQ 0.88.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="User Manual" href="userManual.html" />
+    <link rel="prev" title="FEEDER setup" href="wirelessRewardSetup.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> openEPhys_DACQ
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.88.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="recordingPCandOpenEphysGUI.html">Recording PC setup for Data Acquisition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cameraRPiSetup.html">Camera and GlobalClock Raspberry Pi setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wirelessRewardSetup.html">FEEDER setup</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Recording PC setup for Data Processing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#install-matlab-for-kilosort">Install MATLAB for KiloSort</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#installing-matlab-from-ucl-software-database-website">Installing MATLAB from UCL Software Database website</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installing-matlab-addons">Installing MATLAB addons</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#install-kilosort">Install KiloSort</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-klustakwik">Install Klustakwik</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-google-chrome-to-use-waveform-gui">Install Google Chrome to use Waveform GUI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-openephys-dacq-package">Install openEPhys_DACQ package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="userManual.html">User Manual</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">openEPhys_DACQ</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Recording PC setup for Data Processing</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/recordingPCforDataProcessing.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="recording-pc-setup-for-data-processing">
+<span id="recordingpcfordataprocessing"></span><h1>Recording PC setup for Data Processing<a class="headerlink" href="#recording-pc-setup-for-data-processing" title="Permalink to this headline">¶</a></h1>
+<p>This guide assumes you have already set up a PC with Ubuntu and installed much of the software as instructed in this guide: <a class="reference internal" href="recordingPCandOpenEphysGUI.html#recordingpcandopenephysgui"><span class="std std-ref">Recording PC setup for Data Acquisition</span></a>. If you are setting up a system for data processing only, then the relavant parts are just the following: <a class="reference internal" href="recordingPCandOpenEphysGUI.html#settinguptheoperatingsystem"><span class="std std-ref">Setting up the Operating System</span></a> and <a class="reference internal" href="recordingPCandOpenEphysGUI.html#otherusefulsteps"><span class="std std-ref">Other useful steps</span></a>.</p>
+<div class="section" id="install-matlab-for-kilosort">
+<h2>Install MATLAB for KiloSort<a class="headerlink" href="#install-matlab-for-kilosort" title="Permalink to this headline">¶</a></h2>
+<p>MATLAB is only required to use KiloSort. If you do not intend to use KiloSort, you can skip this part.</p>
+<p>Depending on the source of the MATLAB license, your setup may vary. The following section only details the setup for those who can access University College London Software Database. If you are installing MATLAB from another source, move to <a class="reference internal" href="#installingmatlabaddons"><span class="std std-ref">Installing MATLAB addons</span></a> after installation is finished.</p>
+<div class="section" id="installing-matlab-from-ucl-software-database-website">
+<h3>Installing MATLAB from UCL Software Database website<a class="headerlink" href="#installing-matlab-from-ucl-software-database-website" title="Permalink to this headline">¶</a></h3>
+<p>Instructions are available at <a class="reference external" href="http://swdb.ucl.ac.uk/">UCL Software Database website</a>. But below is the summary of steps.</p>
+<p>Download the <em>.iso</em> files for MATLAB on Linux from <a class="reference external" href="http://swdb.ucl.ac.uk/">UCL Software Database</a>. Right click on <em>…dvd1.iso</em> and select <em>Open With -&gt; Archive Manager</em>. Click on <em>Extract</em> in the top left corner of Archive Manager. Select the location for the files to be unpacked, preferably the Downloads folder. Create a new folder called <em>MATLAB_INSTALL</em> using the button on the top right of the Archive Manager. Select this folder and choose to <em>Extract All files</em> and to <em>Keep directory structure</em>.</p>
+<p>Unpacked files may be set to read-only mode. To fix this, right click on the <em>MATLAB_INSTALL</em> folder you just created and chose <em>Properties</em>. There go to <em>Permissions</em> tab and make sure all rights are set to <em>Create and delete files</em>. Click on <em>Change Permissions for Enclosed Files…</em> and make the same changes there.</p>
+<p>Now open the <em>…dvd2.iso</em> in the Archive Manager and Extract these files to the same <em>MATLAB_INSTALL</em> folder you previously used. Afterwards, you may have to change the folder permissions again, as instructed in the previous paragraph.</p>
+<p>Now go to the <em>MATLAB_INSTALL</em> folder where you unpacked the files, right click and choose <em>Open in Terminal</em>. Enter the terminal command <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">./install</span></code>. Follow through the installation. Refer to the instructions <a class="reference external" href="http://swdb.ucl.ac.uk/">UCL Software Database</a> if necessary. Feel free to delete the <em>MATLAB_INSTALL</em> folder once the installation has finished.</p>
+</div>
+<div class="section" id="installing-matlab-addons">
+<span id="installingmatlabaddons"></span><h3>Installing MATLAB addons<a class="headerlink" href="#installing-matlab-addons" title="Permalink to this headline">¶</a></h3>
+<p>MATLAB is installed at <code class="docutils literal notranslate"><span class="pre">/usr/local/MATLAB/R2017b/bin</span></code> and can be run by calling the terminal command <code class="docutils literal notranslate"><span class="pre">./matlab</span></code> while in that folder. Alternatively you can install an add-on package with the terminal command <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">matlab-support</span></code>, entering <code class="docutils literal notranslate"><span class="pre">usr/local/MATLAB/R2017b</span></code> as the MATLAB path and leaving the username request empty, but do rename the GCC files as it recommends. Now you can start MATLAB by opening the terminal anywhere and entering command <code class="docutils literal notranslate"><span class="pre">matlab</span></code>. It may also work simply by searching it from Dash and in that case you could also Lock it to the Launcher.</p>
+<p>To use similar keyboard shortucts in MATLAB as is used on Windows, such as Ctrl+C for copying, you need to edit some preferences. Start MATLAB, go to Home Tab and select <em>Preferences</em>. In the list on the left, choose <em>Keyboard -&gt; Shortcuts</em> and change the <em>Active settings:</em> to <em>Windows default set</em>.</p>
+<p>When you add Paths to MATLAB and try to save it, you may promted to save <code class="docutils literal notranslate"><span class="pre">pathdef.m</span></code> to a different location. A good place would be the Home folder, so that by opening the terminal with <code class="docutils literal notranslate"><span class="pre">Ctrl+Alt+T</span></code> you can just type in <code class="docutils literal notranslate"><span class="pre">matlab</span></code> and it should load the correct paths.</p>
+</div>
+</div>
+<div class="section" id="install-kilosort">
+<h2>Install KiloSort<a class="headerlink" href="#install-kilosort" title="Permalink to this headline">¶</a></h2>
+<p>If you do not intend to use KiloSort, you can skip this section.</p>
+<p>Download and unpack or <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span></code> <a class="reference external" href="https://github.com/cortex-lab/KiloSort">KiloSort GitHub repository</a> to a convenient location, for example the Programs folder. You can use the following command:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>cd Programs
+git clone https://github.com/cortex-lab/KiloSort
+cd ~
+</pre></div>
+</div>
+<p>Follow further instructions on <a class="reference external" href="https://github.com/cortex-lab/KiloSort">KiloSort GitHub repository</a> for ensuring MATLAB can use the GPU. In short, MATLAB GPU access via CUDA must be configured first and then you should run the <code class="docutils literal notranslate"><span class="pre">KiloSort/CUDA/mexGPUall.m</span></code> file in the downloaded repository using MATLAB.</p>
+<p>Download and unpack or <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span></code> <a class="reference external" href="https://github.com/kwikteam/npy-matlab">npy matlab GitHub repository</a> to a convenient location, for example the Programs folder. You can use the following command:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>cd Programs
+git clone https://github.com/kwikteam/npy-matlab
+cd ~
+</pre></div>
+</div>
+<p>The paths to these folders just created should be provided to <code class="docutils literal notranslate"><span class="pre">openEPhys_Configuration</span></code> when promted.</p>
+</div>
+<div class="section" id="install-klustakwik">
+<h2>Install Klustakwik<a class="headerlink" href="#install-klustakwik" title="Permalink to this headline">¶</a></h2>
+<p>If you do not intend to use Klustakwik, you can skip this section.</p>
+<p>Use the following terminal commands to install Klustakwik</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>cd Programs
+git clone https://github.com/klusta-team/klustakwik
+cd klustakwik
+make
+</pre></div>
+</div>
+<p>The paths to the KlustaKwik file in klustakwik folder just created should be provided to <code class="docutils literal notranslate"><span class="pre">openEPhys_Configuration</span></code> when promted.</p>
+</div>
+<div class="section" id="install-google-chrome-to-use-waveform-gui">
+<h2>Install Google Chrome to use Waveform GUI<a class="headerlink" href="#install-google-chrome-to-use-waveform-gui" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://d1manson.github.io/waveform/">Waveform GUI</a> is a browser based method for conveniently viewing clustered unit waveforms and other unit properties (e.g. spatial correlograms) of data in Axona format. The data recorded with this repository can be converted into Axona format using the processing pipeline. See <a class="reference internal" href="userManual.html#usermanual"><span class="std std-ref">User Manual</span></a> for more details.</p>
+<p>To use Waveform GUI you need Google Chrome.</p>
+<p>To install Google Chrome go to <a class="reference external" href="https://www.google.com/chrome/">website</a> and download 64 bit <em>.deb</em> package for Ubuntu. Once the download is finished, go to the downloaded file and Right Click -&gt; Open With -&gt; GDebi Package Installer. Click Install Package.</p>
+</div>
+<div class="section" id="install-openephys-dacq-package">
+<h2>Install openEPhys_DACQ package<a class="headerlink" href="#install-openephys-dacq-package" title="Permalink to this headline">¶</a></h2>
+<p>Installation of the Python package is straightforward:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pip install openEPhys_DACQ
+
+openEPhys_Configuration  # Starts package configuration script
+</pre></div>
+</div>
+<p>To process data recorded with this package, use terminal command:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>openEPhys_Processing
+</pre></div>
+</div>
+<p>You are now ready to use the Open Ephys Data Processing scripts to detect spike, cluster them with Klustakwik and view the result with spatial correlograms in <a class="reference external" href="http://d1manson.github.io/waveform/">Waveform GUI</a>.</p>
+<p>See <a class="reference internal" href="userManual.html#usermanual"><span class="std std-ref">User Manual</span></a> for more detailed instructions on using the package for data processing.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="userManual.html" class="btn btn-neutral float-right" title="User Manual" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="wirelessRewardSetup.html" class="btn btn-neutral float-left" title="FEEDER setup" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Barry-lab
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
